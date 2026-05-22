@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap');
+
+@theme {
+  --font-serif: "Cinzel", "Playfair Display", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, sans-serif;
+  --color-gold-50: #faf6eb;
+  --color-gold-100: #f5edd7;
+  --color-gold-200: #eadcb0;
+  --color-gold-300: #dcc580;
+  --color-gold-400: #cfae56;
+  --color-gold-500: #c59f3d;
+  --color-gold-600: #aa812f;
+  --color-gold-700: #8a6525;
+  --color-gold-800: #67481a;
+  --color-gold-900: #4a3314;
+}
+
+body {
+  background-color: #0b0a09;
+  color: #faf6eb;
+  font-family: var(--font-sans);
+}
+
+.marble-bg {
+  background-image: radial-gradient(circle at 10% 20%, rgba(26, 24, 22, 0.95) 0%, rgba(11, 10, 9, 0.98) 90%);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0f0e0d;
+}
+::-webkit-scrollbar-thumb {
+  background: #c59f3d;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #aa812f;
+}

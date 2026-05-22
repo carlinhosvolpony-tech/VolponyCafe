@@ -1,0 +1,6 @@
+{
+  "name": "Volpony Café",
+  "description": "Cardápio digital e sistema de checkout online para cafés especiais de 120ml no Volpony Café.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
