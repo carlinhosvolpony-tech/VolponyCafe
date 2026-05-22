@@ -41,3 +41,18 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: #aa812f;
 }
+
+/* Hide scrollbar utility for mobile devices (Chrome, Safari, Firefox, etc) */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+  -webkit-overflow-scrolling: touch; /* Momentum scrolling on iOS */
+}
+
+/* Prevent zoom on double-tap on touch targets on some systems */
+button, input, select, textarea {
+  touch-action: manipulation;
+}

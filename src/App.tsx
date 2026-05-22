@@ -369,7 +369,7 @@ export default function App() {
             <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-8 pb-6 border-b border-zinc-900">
               
               {/* Category buttons */}
-              <div id="filter-wrapper" className="flex items-center gap-2 overflow-x-auto pb-2 md:pb-0 scrollbar-none">
+              <div id="filter-wrapper" className="flex items-center gap-2 overflow-x-auto pb-2 md:pb-0 no-scrollbar">
                 {[
                   { id: 'all', label: 'Tudo' },
                   { id: 'quente', label: 'Cremosos / Quentes' },
@@ -557,6 +557,7 @@ export default function App() {
                       <label className="block text-zinc-400 text-xs mb-1.5 font-mono">WhatsApp com DD</label>
                       <input 
                         type="tel" 
+                        inputMode="tel"
                         required
                         value={phone}
                         onChange={(e) => setPhone(e.target.value)}
@@ -600,6 +601,7 @@ export default function App() {
                       <label className="block text-zinc-400 text-xs mb-1.5 font-mono">Número da sua Mesa</label>
                       <input 
                         type="number" 
+                        inputMode="numeric"
                         required
                         value={tableNumber}
                         onChange={(e) => setTableNumber(e.target.value)}
@@ -825,6 +827,7 @@ export default function App() {
                             <span className="absolute left-3 top-2.5 text-zinc-500 text-xs font-semibold font-mono">R$</span>
                             <input 
                               type="text"
+                              inputMode="decimal"
                               value={changeValue}
                               onChange={(e) => setChangeValue(e.target.value.replace(/[^0-9,.]/g, ""))}
                               placeholder="Ex: 50,00"
@@ -1029,7 +1032,7 @@ export default function App() {
               exit={{ x: "100%" }}
               transition={{ type: "tween", duration: 0.3 }}
               id="cart-drawer"
-              className="fixed right-0 top-0 h-full w-full max-w-md bg-zinc-950 border-l border-gold-900/40 z-50 p-6 flex flex-col justify-between shadow-2xl"
+              className="fixed right-0 top-0 h-full w-full max-w-md bg-zinc-950 border-l border-gold-900/40 z-50 p-6 pb-[calc(1.5rem+env(safe-area-inset-bottom,0px))] flex flex-col justify-between shadow-2xl"
             >
               <div>
                 <div className="flex justify-between items-center pb-4 border-b border-zinc-900">
