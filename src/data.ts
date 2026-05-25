@@ -1,3 +1,14 @@
+import img01 from "./assets/images/creamy_root_01_1779683013420.png";
+import img02 from "./assets/images/mocha_volpony_02_1779683028537.png";
+import img03 from "./assets/images/iced_power_03_1779683047427.png";
+import img04 from "./assets/images/sweet_temptation_04_1779683061577.png";
+import img05 from "./assets/images/choco_ice_premium_05_1779683074415.png";
+import img06 from "./assets/images/chocomax_creamy_06_1779683094498.png";
+import img07 from "./assets/images/peanut_coffee_07_1779683110014.png";
+import img08 from "./assets/images/vanilla_cream_08_1779683124011.png";
+import img09 from "./assets/images/coconut_choco_09_1779683139085.png";
+import heroImg from "./assets/images/volpony_hero_1779475744046.png";
+
 export interface Product {
   id: number;
   numberStr: string;
@@ -17,7 +28,7 @@ export const PRODUCTS: Product[] = [
     description: "Café cremoso com leite quente e toque de doçura.",
     price: 5.00,
     volume: "120 ml",
-    image: "/src/assets/images/creamy_coffee_1779475808042.png",
+    image: img01,
     category: "quente"
   },
   {
@@ -27,7 +38,7 @@ export const PRODUCTS: Product[] = [
     description: "Café cremoso com chocolate e leite. Equilibrado e marcante.",
     price: 6.00,
     volume: "120 ml",
-    image: "/src/assets/images/mocha_coffee_1779475780524.png",
+    image: img02,
     category: "quente"
   },
   {
@@ -37,7 +48,7 @@ export const PRODUCTS: Product[] = [
     description: "Café gelado cremoso, refrescante e perfeito para qualquer hora.",
     price: 7.00,
     volume: "120 ml",
-    image: "/src/assets/images/iced_coffee_1779475763279.png",
+    image: img03,
     category: "gelado"
   },
   {
@@ -47,7 +58,7 @@ export const PRODUCTS: Product[] = [
     description: "Café cremoso com leite condensado. Doce na medida certa.",
     price: 7.00,
     volume: "120 ml",
-    image: "/src/assets/images/creamy_coffee_1779475808042.png",
+    image: img04,
     category: "quente"
   },
   {
@@ -57,7 +68,7 @@ export const PRODUCTS: Product[] = [
     description: "Café, chocolate e gelo. Uma experiência gelada e intensa.",
     price: 8.00,
     volume: "120 ml",
-    image: "/src/assets/images/iced_coffee_1779475763279.png",
+    image: img05,
     category: "gelado"
   },
   {
@@ -67,7 +78,7 @@ export const PRODUCTS: Product[] = [
     description: "Café cremoso com achocolatado. Simples e irresistível.",
     price: 6.00,
     volume: "120 ml",
-    image: "/src/assets/images/mocha_coffee_1779475780524.png",
+    image: img06,
     category: "quente"
   },
   {
@@ -77,7 +88,7 @@ export const PRODUCTS: Product[] = [
     description: "Café cremoso com paçoca. Sabor marcante e bem brasileiro.",
     price: 8.00,
     volume: "120 ml",
-    image: "/src/assets/images/creamy_coffee_1779475808042.png",
+    image: img07,
     category: "especial"
   },
   {
@@ -87,7 +98,7 @@ export const PRODUCTS: Product[] = [
     description: "Café cremoso com baunilha. Suave, aromático e sofisticado.",
     price: 7.00,
     volume: "120 ml",
-    image: "/src/assets/images/creamy_coffee_1779475808042.png",
+    image: img08,
     category: "especial"
   },
   {
@@ -97,12 +108,12 @@ export const PRODUCTS: Product[] = [
     description: "Café cremoso com chocolate e leite de coco. Tropical e delicioso.",
     price: 10.00,
     volume: "120 ml",
-    image: "/src/assets/images/mocha_coffee_1779475780524.png",
+    image: img09,
     category: "especial"
   }
 ];
 
-export const HERO_IMAGE = "/src/assets/images/volpony_hero_1779475744046.png";
+export const HERO_IMAGE = heroImg;
 
 export interface CartItem {
   product: Product;

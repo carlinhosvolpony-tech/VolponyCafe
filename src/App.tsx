@@ -20,7 +20,9 @@ import {
   Share2,
   Lock,
   Wallet,
-  AlertCircle
+  AlertCircle,
+  Smartphone,
+  Monitor
 } from "lucide-react";
 import { motion, AnimatePresence } from "motion/react";
 import { PRODUCTS, HERO_IMAGE, Product, CartItem } from "./data";
@@ -277,7 +279,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen marble-bg text-amber-50 selection:bg-gold-500 selection:text-black">
+    <div className="min-h-screen marble-bg text-amber-50 selection:bg-gold-500 selection:text-black flex flex-col justify-between scroll-smooth relative">
       
       {/* Dynamic Header */}
       <nav id="navbar" className="sticky top-0 z-40 bg-zinc-950/90 border-b border-gold-900/40 backdrop-blur-md px-4 py-3 md:px-8 flex justify-between items-center">
@@ -1032,7 +1034,7 @@ export default function App() {
               exit={{ x: "100%" }}
               transition={{ type: "tween", duration: 0.3 }}
               id="cart-drawer"
-              className="fixed right-0 top-0 h-full w-full max-w-md bg-zinc-950 border-l border-gold-900/40 z-50 p-6 pb-[calc(1.5rem+env(safe-area-inset-bottom,0px))] flex flex-col justify-between shadow-2xl"
+              className="fixed right-0 top-0 h-full w-full max-w-md bg-zinc-950 border-l border-gold-900/40 z-[60] p-6 pb-[calc(1.5rem+env(safe-area-inset-bottom,0px))] flex flex-col justify-between shadow-2xl"
             >
               <div>
                 <div className="flex justify-between items-center pb-4 border-b border-zinc-900">
@@ -1159,7 +1161,6 @@ export default function App() {
           </div>
         </div>
       </footer>
-
     </div>
   );
 }
